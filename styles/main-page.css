@@ -1,6 +1,5 @@
 header {
     background-color: #909090;
-    color: white;
     padding: 10px;
     text-align: center;
     text-transform: uppercase;
@@ -11,6 +10,9 @@ header {
 nav {
     background-color: #cacaca;
     padding: 10px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    justify-items: center;
 }
 
 nav a {
@@ -18,6 +20,36 @@ nav a {
     text-decoration: none;
     margin: 0 10px;
 }
+
+section {
+    margin: 20px;
+    padding: 20px;
+    border: 2px solid #909090;
+    border-radius: 10px;
+    background-color: #f0f0f0;
+}
+
+main {
+
+display: grid;
+grid-template-columns: repeat(4, 1fr);
+}
+
+
+
+section#red {
+    background-color: rgb(249, 139, 98);
+
+}
+
+section#blue {
+    background-color: #40a3ff;
+
+}
+section#green {
+    background-color: #01c853;
+}
+
 
 h1{
     text-align: center;
@@ -36,6 +68,7 @@ img {
   margin: auto;
   scale: 75%;
 }
+
 
 
 footer {

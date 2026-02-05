@@ -4,98 +4,128 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Apostles Spotlights</title>
-    <style>
-
+<style>
 
 body {
   background: #E8ECEC;
   font-family: Arial, sans-serif;
 }
-.photo:hover {
-    transform: scale(1.1);
-    box-shadow: 0 4px 12px rgba(0,0,0,0.3);
-    transition: all 0.3s ease;
-}
-.card-container {
-  background: url('images/christus.webp') no-repeat center center/cover;
-  border: 5px solid #000;
-  border-radius: 30px;
-  width: 800px;
-  margin: 30px auto;
-  padding: 30px 20px 20px 20px;
-}
 
-.titles {
-  text-align: center;
-  color: #fff;
-  margin-bottom: 20px;
-  z-index: 2;
+.card-container {
+  background: url('images/christus.webp') no-repeat center center / cover;
+  border: 6px solid #000;
+  border-radius: 30px;
+  width: 900px;
+  margin: 30px auto;
+  padding: 30px 40px 40px;
   position: relative;
 }
+
+.titles h3 {
+  font-size: 28px;
+  font-weight: bold;
+  text-align: center;
+  color: #ffffff;
+  margin: 30px 0 10px;
+}
+
+.titles h4 {
+  font-size: 22px;
+  font-weight: bold;
+  text-align: center;
+  color: #ffffff;
+  margin: 30px 0 20px;
+}
+
+
 
 .first-presidency {
   display: flex;
   justify-content: center;
-  gap: 30px;
-  margin-bottom: 20px;
-  z-index: 2;
-  position: relative;
+  gap: 35px;
+
 }
 
-.first-presidency .photo {
-  width: 150px;
-  height: 150px;
+.first-presidency .photo-l {
+  width: 180px;
+  height: 180px;
   border-radius: 50%;
   border: 6px solid #fff;
   object-fit: cover;
   background: #fff;
 }
+
+.first-presidency .photo-m {
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+  border: 6px solid #fff;
+  object-fit: cover;
+  background: #fff;
+  position: relative;
+  bottom: -20px;
+}
+
+
 
 .quorum {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 20px;
-    justify-content: center;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  row-gap: 28px;
 }
 
-.quorum .photo {
-  width: 90px;
-  height: 90px;
+.quorum .photo-s {
+  width: 100px;
+  height: 100px;
   border-radius: 50%;
   border: 6px solid #fff;
   object-fit: cover;
   background: #fff;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+  margin: 0 auto;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.25);
 }
 
-    </style>
+/* HOVER */
+.photo-s, .photo-m, .photo-l {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.photo-s:hover, .photo-m:hover, .photo-l:hover {
+  transform: scale(1.08);
+  box-shadow: 0 6px 16px rgba(0,0,0,0.35);
+}
+
+
+</style>
 </head>
+
 <body>
   <div class="card-container">
     <div class="titles">
-      <h2>First Presidency</h2>
+      <h3>First Presidency</h3>
     </div>
-    <div class="first-presidency">
-      <img src="images/oaks.webp" class="photo" alt="oaks">
-      <img src="images/nelson.webp" class="photo" alt="nelson">
-      <img src="images/eyring.webp" class="photo" alt="eyring">
-    </div>
+
+<div class="first-presidency">
+  <img src="images/christofferson.webp" class="photo-m" alt="D. Todd Christofferson">
+  <img src="images/oaks.webp" class="photo-l" alt="Dallin H. Oaks">
+  <img src="images/eyring.webp" class="photo-m" alt="Henry B. Eyring">
+</div>
     <div class="titles">
-      <h3>Quorum of the Twelve Apostles</h3>
+      <h4>Quorum of the Twelve Apostles</h4>
     </div>
     <div class="quorum">
-      <img src="images/holland.webp" class="photo" alt="Holland">
-      <img src="images/uchtdorf.webp" class="photo" alt="Uchtdorf">
-      <img src="images/bednar.webp" class="photo" alt="Bednar">
-      <img src="images/cook.webp" class="photo" alt="Cook">
-      <img src="images/christofferson.webp" class="photo" alt="Christofferson">
-      <img src="images/anderson.webp" class="photo" alt="Anderson">
-      <img src="images/rasband.webp" class="photo" alt="Rasband">
-      <img src="images/stevenson.webp" class="photo" alt="Stevenson">
-      <img src="images/renlund.webp" class="photo" alt="Renlund">
-      <img src="images/gong.webp" class="photo" alt="Gong">
-      <img src="images/soares.webp" class="photo" alt="Soares">
-      <img src="images/kearon.webp" class="photo" alt="Kearon">
+      <img src="images/holland.webp" class="photo-s" alt="Holland">
+      <img src="images/uchtdorf.webp" class="photo-s" alt="Uchtdorf">
+      <img src="images/bednar.webp" class="photo-s" alt="Bednar">
+      <img src="images/cook.webp" class="photo-s" alt="Cook">
+      <img src="images/g-causse.webp" class="photo-s" alt="Christofferson">
+      <img src="images/anderson.webp" class="photo-s" alt="Anderson">
+      <img src="images/rasband.webp" class="photo-s" alt="Rasband">
+      <img src="images/stevenson.webp" class="photo-s" alt="Stevenson">
+      <img src="images/renlund.webp" class="photo-s" alt="Renlund">
+      <img src="images/gong.webp" class="photo-s" alt="Gong">
+      <img src="images/soares.webp" class="photo-s" alt="Soares">
+      <img src="images/kearon.webp" class="photo-s" alt="Kearon">
     </div>
   </div>
 </body>

@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apostles Spotlights</title>
+    <style>
+
+
+body {
+  background: #E8ECEC;
+  font-family: Arial, sans-serif;
+}
+.photo:hover {
+    transform: scale(1.1);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+    transition: all 0.3s ease;
+}
+.card-container {
+  background: url('images/christus.webp') no-repeat center center/cover;
+  border: 5px solid #000;
+  border-radius: 30px;
+  width: 800px;
+  margin: 30px auto;
+  padding: 30px 20px 20px 20px;
+}
+
+.titles {
+  text-align: center;
+  color: #fff;
+  margin-bottom: 20px;
+  z-index: 2;
+  position: relative;
+}
+
+.first-presidency {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  margin-bottom: 20px;
+  z-index: 2;
+  position: relative;
+}
+
+.first-presidency .photo {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  border: 6px solid #fff;
+  object-fit: cover;
+  background: #fff;
+}
+
+.quorum {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    justify-content: center;
+}
+
+.quorum .photo {
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  border: 6px solid #fff;
+  object-fit: cover;
+  background: #fff;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+}
+
+    </style>
+</head>
+<body>
+  <div class="card-container">
+    <div class="titles">
+      <h2>First Presidency</h2>
+    </div>
+    <div class="first-presidency">
+      <img src="images/oaks.webp" class="photo" alt="oaks">
+      <img src="images/nelson.webp" class="photo" alt="nelson">
+      <img src="images/eyring.webp" class="photo" alt="eyring">
+    </div>
+    <div class="titles">
+      <h3>Quorum of the Twelve Apostles</h3>
+    </div>
+    <div class="quorum">
+      <img src="images/holland.webp" class="photo" alt="Holland">
+      <img src="images/uchtdorf.webp" class="photo" alt="Uchtdorf">
+      <img src="images/bednar.webp" class="photo" alt="Bednar">
+      <img src="images/cook.webp" class="photo" alt="Cook">
+      <img src="images/christofferson.webp" class="photo" alt="Christofferson">
+      <img src="images/anderson.webp" class="photo" alt="Anderson">
+      <img src="images/rasband.webp" class="photo" alt="Rasband">
+      <img src="images/stevenson.webp" class="photo" alt="Stevenson">
+      <img src="images/renlund.webp" class="photo" alt="Renlund">
+      <img src="images/gong.webp" class="photo" alt="Gong">
+      <img src="images/soares.webp" class="photo" alt="Soares">
+      <img src="images/kearon.webp" class="photo" alt="Kearon">
+    </div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,123 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+}
+nav ul li a:hover {
+    text-decoration: underline;
+}
+main {
+    padding: 20px;
+}
+.about-card {
+    background-color: #f4f4f4;
+    padding: 20px;
+    margin-bottom: 20px;
+    border: #333 solid 1px;
+    border-radius: 5px;
+}
+.about-card img {
+    width: 150px;
+    height: 150px;
+    border: #333 solid 3px;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+.about-card p {
+    margin-top: 10px;
+    line-height: 1.5;
+}
+
+.project-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    justify-content: center;
+}
+.project-card-1, .project-card-2, .project-card-3, .project-card-4 {
+    background-color: #f4f4f4;
+    padding: 20px;
+    border: #333 solid 1px;
+    border-radius: 5px;
+}
+.project-image img {
+    width: 200px;
+    height: auto;
+    border-radius: 5px;
+}
+
+.table-upcomming-projects {
+    margin-top: 20px;
+}
+.table-upcomming-projects table {
+    width: 100%;
+    border-collapse: collapse;
+}
+.table-upcomming-projects th, .table-upcomming-projects td {
+    border: 1px solid #333;
+    padding: 10px;
+    text-align: left;
+}
+.table-upcomming-projects th {
+    background-color: #333;
+    color: #fff;
+}
+
+form {
+    margin-top: 20px;
+}
+form label {
+    display: block;
+    margin-bottom: 5px;
+}
+form input, form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #333;
+    border-radius: 5px;
+}
+form button {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+.social-icons {
+    margin-top: 10px;
+}
+.social-icons a {
+    margin: 0 10px;
+}
+.social-icons img {
+    width: 30px;
+    height: auto;
+}

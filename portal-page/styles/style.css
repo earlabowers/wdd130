@@ -187,7 +187,7 @@ footer {
     background-color: #22223B;
     color: #F2E9E4;
     padding: 1.5rem 0;
-    position: relative;
+}
 
 .footer {
     max-width: 1200px;
@@ -196,7 +196,8 @@ footer {
     display: flex;
     justify-content: space-between;
     align-items: center;
-
+    flex-wrap: wrap;
+}
 
 .social-icons {
     display: flex;

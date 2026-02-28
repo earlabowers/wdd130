@@ -1,110 +1,132 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="styles/style.css">
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title> Portal </title>
+     <link rel="stylesheet" href="styles.css">
 </head>
-
 <body>
 
-<header>
-    <nav>
-        <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">WRR</a></li>
-            <li><a href="#">ICE</a></li>
-            <li><a href="#">About Me</a></li>
-        </ul>
-    </nav>
-</header>
+     <header class="header">
+          <a href="../index.html"><img class="logo" src="images/logo-eb.png" alt="My Logo"></a>
+         <nav>
+               <a href="index.html">Home</a>
+               <a href="../wrr/index.html">WRR</a>
+               <a href="../ice/index.html">ICE</a>
+               <a href="#">About Me</a>
+          </nav>
+     </header>
 
-<main>
-    <div class="about-card">
-        <h1>Earl Bowers ~ WDD130</h1>
-        <img src="images/me.jpg" alt="Photo of Earl Bowers">
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea maxime aliquid totam modi dolore omnis laboriosam tempora.</p>
-    </div>
+     <main>
 
-    <section class="project-cards">
-        <div class="project-card-1">
-            <div class="project-image">
-                <img src="images/proj1-thumbnail.webp" alt="project image 1">
-            </div>
-            <h2>Project</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-        </div>
+          <section class="about-section">
 
-        <div class="project-card-2">
-            <div class="project-image">
-                <img src="images/proj2-thumbnail.jpg" alt="project image 2">
-            </div>
-            <h2>Project</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-        </div>
+               <div class="about-title">
+                    <h2>About Me</h2>
+               </div>
 
-        <div class="project-card-3">
-            <div class="project-image">
-                <img src="images/proj3-thumbnail.jpg" alt="project image 3">
-            </div>
-            <h2>Project</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-        </div>
+               <div class="about-container">
+                    <img src="images/me.jpg" alt="Photo of me">
+                    <p>
+                         Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                         Quisquam, voluptatum.
+                    </p>
+               </div>
 
-        <div class="project-card-4">
-            <div class="project-image">
-                <img src="images/proj4-thumbnail.webp" alt="project image 4">
-            </div>
-            <h2>Project</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-        </div>
-    </section>
+          </section>
 
-    <div class="table-upcomming-projects">
-        <h2>Upcoming Projects</h2>
-        <table>
-            <tr>
-                <th>Project Name</th>
-                <th>Description</th>
-                <th>Due Date</th>
-            </tr>
-            <tr>
-                <td>ICE Project 1</td>
-                <td>Lorem ipsum dolor sit amet.</td>
-                <td>March 15, 2026</td>
-            </tr>
-            <tr>
-                <td>ICE Project 2</td>
-                <td>Lorem ipsum dolor sit amet.</td>
-                <td>April 15, 2026</td>
-            </tr>
-            <tr>
-                <td>Personal Project</td>
-                <td>Lorem ipsum dolor sit amet.</td>
-                <td>May 15, 2026</td>
-            </tr>
-        </table>
-    </div>
+          <section class="projects-section">
 
-    <div class="contact-me-forum">
-        <h2>Contact Me</h2>
-        <form>
-            <label for="name">Name:</label>
-            <input type="text" id="name" required>
+               <h2>Projects</h2>
 
-            <label for="email">Email:</label>
-            <input type="email" id="email" required>
+               <div class="project-img-grid">
 
-            <label for="message">Message:</label>
-            <textarea id="message" rows="5" required></textarea>
+                    <a href="#"><img src="images/project-image-1.jpg" alt="project image 1"></a>
+                    <a href="#"><img src="images/project-image-2.jpg" alt="project image 2"></a>
+                    <a href="#"><img src="images/project-image-3.jpg" alt="project image 3"></a>
+                    <a href="#"><img src="images/project-image-4.jpg" alt="project image 4"></a>
 
-            <button type="submit">Send</button>
-        </form>
-    </div>
-</main>
+                    <div class="project-item1">
+                         <h3>Project 1</h3>
+                         <p>A brief description of the first project.</p>
+                    </div>
 
-<footer>
+                    <div class="project-item2">
+                         <h3>Project 2</h3>
+                         <p>A brief description of the second project.</p>
+                    </div>
+
+                    <div class="project-item3">
+                         <h3>Project 3</h3>
+                         <p>A brief description of the third project.</p>
+                    </div>
+
+                    <div class="project-item4">
+                         <h3>Project 4</h3>
+                         <p>A brief description of the fourth project.</p>
+                    </div>
+
+               </div>
+
+          </section>
+
+          <section class="table-section">
+
+               <div class="table-title">
+                    <h2>Upcoming Projects</h2>
+               </div>
+
+               <div class="table-form-container">
+
+                    <table>
+                         <tr>
+                              <th>Project Name</th>
+                              <th>Description</th>
+                              <th>Link</th>
+                         </tr>
+                         <tr>
+                              <td>Project 1</td>
+                              <td>A brief description.</td>
+                              <td><a href="#">View Project</a></td>
+                         </tr>
+                         <tr>
+                              <td>Project 2</td>
+                              <td>A brief description.</td>
+                              <td><a href="#">View Project</a></td>
+                         </tr>
+                         <tr>
+                              <td>Project 3</td>
+                              <td>A brief description.</td>
+                              <td><a href="#">View Project</a></td>
+                         </tr>
+                         <tr>
+                              <td>Project 4</td>
+                              <td>A brief description.</td>
+                              <td><a href="#">View Project</a></td>
+                         </tr>
+                    </table>
+
+                    <form action="contact-me-form">
+                         <label for="name">Name:</label>
+                         <input type="text" id="name" name="name" required>
+
+                         <label for="email">Email:</label>
+                         <input type="email" id="email" name="email" required>
+
+                         <label for="message">Message:</label>
+                         <textarea id="message" name="message" required></textarea>
+
+                         <button type="submit">Send</button>
+                    </form>
+
+               </div>
+
+          </section>
+
+     </main>
+
+     <footer>
     <div class="footer">
         <p>&copy; 2026 Earl Bowers ~ WDD130</p>
         <div class="social-icons">
